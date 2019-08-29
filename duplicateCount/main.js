@@ -14,9 +14,17 @@ Example
 */
 
 const duplicateCount = text => {
-    return console.log(text);
+    let individualCharacters = text.toLowerCase().split('');
+    let obj = {};
+
+    // create object of characters
+    individualCharacters.forEach((character, index) => {
+        obj[index] = character;    
+    });
+    
 }
 
+duplicateCount('gg'); // 1
 duplicateCount('abcde'); // 0
 duplicateCount('aabbcde'); // 2
 duplicateCount('aA11'); // 2
