@@ -1,12 +1,8 @@
 function findShort(s) {
-  let wordLength = s.split(" ")[0].length;
-
-  s.split(" ").forEach((word) => {
-    if (word.length < wordLength) {
-      wordLength = word.length;
-    }
-  });
-  return wordLength;
+  return Math.min.apply(
+    null,
+    s.split(" ").map((word) => word.length)
+  );
 }
 
 console.log(findShort("This is a short sentence")); // 1
