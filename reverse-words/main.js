@@ -23,6 +23,6 @@ function reverseWords(str) {
 }
 
 console.log(reverseWords("a")); // a;
-console.log(reverseWords("a  p")); // a  p;
+console.log(reverseWords("a  p")); // p  a;
 console.log(reverseWords(" apple")); // ' elppa';
 console.log(reverseWords("The quick brown fox jumps over the lazy dog.")); // 'ehT kciuq nworb xof spmuj revo eht yzal .god';
